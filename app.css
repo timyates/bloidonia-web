@@ -20,11 +20,12 @@ html, body {
   fill: #333;
   stroke: #333;
   opacity: 0.5;
-  margin: 32px 0;
+  margin: 0;
   transition: transform 1s;
 }
 
 #body {
+  margin-top: -2em;
   font-size: 2em;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -40,5 +41,4 @@ a {
 svg {
   width: 100%;
   pointer-events: none;
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9)) url(#filter);
 }
