@@ -1,14 +1,14 @@
 html, body {
   margin: 0;
-  background-color: #fcfbf9;
-  background: #dd3e54;  /* fallback for old browsers */
-  background: radial-gradient(circle, rgba(189,174,238,1) 0%, rgba(231,14,126,1) 8%, rgba(87,129,103,1) 38%, rgba(241,153,49,1) 67%, rgba(148,187,233,1) 100%);
+  background-color: #D9AFD9;
+  background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+  overflow: hidden;
 }
 
 #container {
   width: 100%;
   height: 100%;
-  perspective: 2px;
+  perspective: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +19,7 @@ html, body {
   width: 60%;
   fill: #333;
   stroke: #333;
+  opacity: 0.5;
   margin: 32px 0;
   transition: transform 1s;
 }
@@ -39,6 +40,5 @@ a {
 svg {
   width: 100%;
   pointer-events: none;
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(246, 255, 170, 0.6));
-  filter: drop-shadow(0px 0px 10px rgba(246, 255, 170, 0.6));
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9)) url(#filter);
 }
